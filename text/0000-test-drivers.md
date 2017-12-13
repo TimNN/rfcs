@@ -1,12 +1,12 @@
-- Feature Name: (fill me in with a unique ident, my_awesome_feature)
-- Start Date: (fill me in with today's date, YYYY-MM-DD)
-- RFC PR: (leave this empty)
-- Rust Issue: (leave this empty)
+- Feature Name: test_drivers
+- Start Date: 2017-12-13
+- RFC PR:
+- Rust Issue:
 
 # Summary
 [summary]: #summary
 
-One para explanation of the feature.
+Rust currently provides basic unit testing support and unstable benchmarking support. However there is desire for benchmarking support on stable and more advanced test features, such as parameterized tests or "tear down" and "setup" functions. Keeping in mind Rust's goal of providing a small set of core functionality, none of these features seem to have a place in the standard rust distribution, but should be provided by external crates. This RFC proposes a lightweight API for `libtest`, allowing all these use cases, and more, to be supported by external crates.
 
 # Motivation
 [motivation]: #motivation
